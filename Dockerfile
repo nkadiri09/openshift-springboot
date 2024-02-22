@@ -5,7 +5,7 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 
 # Copy the packaged Spring Boot JAR file into the container at /app
-COPY target/openshift-test-0.0.1-SNAPSHOT.jar /app/openshift-test-0.0.1-SNAPSHOT.jar
+COPY openshift-test-0.0.1-SNAPSHOT.jar /app/openshift-test-0.0.1-SNAPSHOT.jar
 
 # Expose the port that your Spring Boot application uses
 EXPOSE 8080
